@@ -10,6 +10,9 @@ userRouter.post("/signup", controller.signUp);
 // 로그인
 userRouter.post("/login", controller.login);
 
+// 네이버 소셜 로그인
+userRouter.post("/loginNaver", controller.loginNaver);
+
 //* 로그인이 필요한 요청
 userRouter.use("/", authUser);
 
